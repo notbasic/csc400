@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+  <title>APP</title>
+</head>
+<body class='container'>
+
+  <h1>Remote Sub Voltage Measurements</h1>
+  <div class="volts-div">
+    <table class="table table-sm">
+      <tr>
+        <td class="text-right"><span class="badge rounded-pill bg-primary">SS1</span><span class="volts" id ="ss1" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS2</span><span class="volts" id ="ss2"></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS3</span><span class="volts" id ="ss3" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS4</span><span class="volts" id ="ss4" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS5</span><span class="volts" id ="ss5" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS6</span><span class="volts" id ="ss6" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS7</span><span class="volts" id ="ss7" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS8</span><span class="volts" id ="ss8" ></span></td>
+      </tr>
+
+      <tr>
+        <td><span class="badge rounded-pill bg-primary">SS9</span><span class="volts" id ="ss9" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS10</span><span class="volts" id ="ss10" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS11</span><span class="volts" id ="ss11" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS12</span><span class="volts" id ="ss12" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS13</span><span class="volts" id ="ss13" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS14</span><span class="volts" id ="ss14" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS15</span><span class="volts" id ="ss15" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS16</span><span class="volts" id ="ss16" ></span></td>
+      </tr>
+
+      <tr>
+        <td><span class="badge rounded-pill bg-primary">SS17</span><span class="volts" id ="ss17" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS18</span><span class="volts" id ="ss18" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS19</span><span class="volts" id ="ss19" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS20</span><span class="volts" id ="ss20" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS21</span><span class="volts" id ="ss21" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS22</span><span class="volts" id ="ss22" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS23</span><span class="volts" id ="ss23" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS24</span><span class="volts" id ="ss24" ></span></td>
+      </tr>
+
+      <tr>
+        <td><span class="badge rounded-pill bg-primary">SS25</span><span class="volts" id ="ss25" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS26</span><span class="volts" id ="ss26" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS27</span><span class="volts" id ="ss27" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS28</span><span class="volts" id ="ss28" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS29</span><span class="volts" id ="ss29" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS30</span><span class="volts" id ="ss30" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS31</span><span class="volts" id ="ss31" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS32</span><span class="volts" id ="ss32" ></span></td>
+      </tr>
+
+      <tr>
+        <td><span class="badge rounded-pill bg-primary">SS33</span><span class="volts" id ="ss33" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS34</span><span class="volts" id ="ss34" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS35</span><span class="volts" id ="ss35" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS36</span><span class="volts" id ="ss36" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS37</span><span class="volts" id ="ss37" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS38</span><span class="volts" id ="ss38" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS39</span><span class="volts" id ="ss39" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS40</span><span class="volts" id ="ss40" ></span></td>
+      </tr>
+
+      <tr>
+        <td><span class="badge rounded-pill bg-primary">SS41</span><span class="volts" id ="ss41" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS42</span><span class="volts" id ="ss42" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS43</span><span class="volts" id ="ss43" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS44</span><span class="volts" id ="ss44" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS45</span><span class="volts" id ="ss45" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS46</span><span class="volts" id ="ss46" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS47</span><span class="volts" id ="ss47" ></span></td>
+        <td><span class="badge rounded-pill bg-primary">SS48</span><span class="volts" id ="ss48" ></span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+
+  <br>
+  <br>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
